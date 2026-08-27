@@ -5,3 +5,4 @@ venv/
 .env
 .vscode/
 .streamlit/secrets.toml
+.agents/skills/developing-with-streamlit
