@@ -47,5 +47,7 @@ def genetic_algorithm(generations, population_size, selection_percent, mutation_
          
         population = new_population 
      
-    population.sort(key=lambda ind: ind[2]) 
+    population.sort(key=lambda ind: ind[2])
+    global last_population
+    last_population = population.copy()
     return population[0]

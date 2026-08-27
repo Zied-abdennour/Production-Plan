@@ -3,6 +3,7 @@ import streamlit as st
 from gui.style import apply_style, page_header
 from algorithm.genetic_algorithm import genetic_algorithm
 from algorithm.decoder import decode_all
+from rag.plan_store import save_equal_score_plans   
 
 apply_style()
 
@@ -73,6 +74,13 @@ if st.button(
         st.stop()
 
     st.session_state.best_result = result
+
+    save_equal_score_plans(
+        orders,
+        product_operations,
+        rates
+    )
+    
     st.success("Optimization completed.")
 
 if "best_result" not in st.session_state:
