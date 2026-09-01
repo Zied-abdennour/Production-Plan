@@ -40,7 +40,6 @@ if "parameters" not in st.session_state:
 if "best_result" not in st.session_state:
     st.session_state.best_result = None
 
-
 def load_example_data():
     st.session_state.orders = example_orders.copy()
     st.session_state.product_operations = example_product_operations.copy()
@@ -49,7 +48,6 @@ def load_example_data():
     st.session_state.workplaces = example_workplaces.copy()
     st.session_state.best_result = None
 
-
 def clear_all_data():
     st.session_state.orders = {}
     st.session_state.product_operations = {}
@@ -57,7 +55,6 @@ def clear_all_data():
     st.session_state.rates = {}
     st.session_state.workplaces = []
     st.session_state.best_result = None
-
 
 pg = st.navigation(
     [
@@ -100,13 +97,16 @@ pg = st.navigation(
             "pages/results.py",
             title="Results",
             icon=":material/analytics:"
+        ),
+        st.Page(
+            "pages/chatbot.py",
+            title="AI Assistant",
+            icon=":material/smart_toy:"
         )
     ]
 )
 
-
 with st.sidebar:
-
     st.markdown("### Data")
 
     if st.button(
@@ -124,6 +124,5 @@ with st.sidebar:
         clear_all_data()
         st.success("All data cleared.")
         st.rerun()
-
 
 pg.run()
