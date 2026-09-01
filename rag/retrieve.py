@@ -1,81 +1,58 @@
-import json
-import os
+import requests
+import chromadb
+
+OLLAMA_URL = "http://localhost:11434/api/embed"
+EMBEDDING_MODEL = "nomic-embed-text"
 
 
-PLANS_FILE = "data/plans.json"
-
-
-def load_plans():
-    if not os.path.exists(PLANS_FILE):
-        return []
-
-    with open(PLANS_FILE, "r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-def retrieve_equal_score_plans(score, plans):
-    return [
-        plan
-        for plan in plans
-        if plan.get("score") == score
-    ]
-
-
-def retrieve_plan_by_score(score):
-    plans = load_plans()
-
-    return retrieve_equal_score_plans(
-        score,
-        plans
+def create_query_embedding(question):
+    response = requests.post(
+        OLLAMA_URL,
+        json={
+            "model": EMBEDDING_MODEL,
+            "input": [question]
+        }
     )
 
+    response.raise_for_status()
 
-def format_plan(plan):
-    sequence = plan.get("sequence", [])
-    assignments = plan.get("workplace_assignment", {})
-    schedule = plan.get("schedule", [])
-
-    text = []
-
-    text.append(f"Score: {plan.get('score')}")
-
-    text.append("\nProduction sequence:")
-
-    for order, operation in sequence:
-        text.append(
-            f"{order} -> {operation}"
-        )
-
-    text.append("\nWorkplace assignments:")
-
-    for key, workplace in assignments.items():
-        text.append(
-            f"{key} -> {workplace}"
-        )
-
-    text.append("\nSchedule:")
-
-    for item in schedule:
-        text.append(
-            f"{item['order']} -> "
-            f"{item['operation']} -> "
-            f"{item['workplace']} | "
-            f"{item['start']} -> {item['end']}"
-        )
-
-    return "\n".join(text)
+    return response.json()["embeddings"][0]
 
 
-def build_context(plans):
-    if not plans:
-        return "No relevant production plans were found."
+def retrieve_plans(question, number_of_results=3):
+    client = chromadb.PersistentClient(
+        path="data/chroma"
+    )
 
-    context = []
+    collection = client.get_collection(
+        name="production_plans"
+    )
 
-    for i, plan in enumerate(plans, 1):
-        context.append(
-            f"--- Plan {i} ---\n"
-            f"{format_plan(plan)}"
-        )
+    query_embedding = create_query_embedding(
+        question
+    )
 
-    return "\n\n".join(context)
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=number_of_results
+    )
+
+    return results
+
+
+if __name__ == "__main__":
+    question = input(
+        "Ask about the production plans: "
+    )
+
+    results = retrieve_plans(
+        question
+    )
+
+    documents = results["documents"][0]
+    distances = results["distances"][0]
+
+    for i, document in enumerate(documents):
+        print("\n--- Retrieved Plan ---")
+        print(f"Distance: {distances[i]}")
+        print(document)
