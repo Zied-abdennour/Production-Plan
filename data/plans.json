@@ -1,6 +1,6 @@
 {
   "best_score": 0,
-  "number_of_equal_plans": 29,
+  "number_of_equal_plans": 43,
   "plans": [
     {
       "plan_id": "Plan_01",
@@ -11,12 +11,12 @@
           "operation": "Op1"
         },
         {
-          "order": "Order2",
-          "operation": "Op3"
-        },
-        {
           "order": "Order1",
           "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
         },
         {
           "order": "Order1",
@@ -41,13 +41,13 @@
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
         "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op3": "WP1"
       },
       "schedule": [
         {
@@ -58,16 +58,16 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
           "start": 6.0,
           "end": 16.0
         },
         {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
           "start": 6.0,
           "end": 16.0
         },
@@ -81,7 +81,7 @@
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -96,15 +96,15 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
+          "start": 29.33,
+          "end": 37.67
         },
         {
           "order": "Order3",
           "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "workplace": "WP1",
+          "start": 49.33,
+          "end": 61.83
         }
       ]
     },
@@ -117,19 +117,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -139,21 +143,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -164,11 +164,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -185,9 +185,16 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -202,15 +209,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -223,19 +223,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
           "operation": "Op2"
         },
         {
           "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -245,21 +249,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
         "Order1_Op2": "WP3",
         "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -270,16 +270,16 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
           "start": 6.0,
           "end": 16.0
         },
         {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
           "start": 6.0,
           "end": 16.0
         },
@@ -299,10 +299,17 @@
         },
         {
           "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 28.5
+        },
+        {
+          "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 28.5,
+          "end": 34.75
         },
         {
           "order": "Order3",
@@ -310,13 +317,6 @@
           "workplace": "WP3",
           "start": 49.33,
           "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
         }
       ]
     },
@@ -329,19 +329,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -351,21 +355,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
+        "Order2_Op3": "WP1",
         "Order1_Op3": "WP3",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -376,11 +376,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -395,6 +395,13 @@
           "workplace": "WP3",
           "start": 16.0,
           "end": 29.33
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
@@ -416,13 +423,6 @@
           "workplace": "WP3",
           "start": 49.33,
           "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
         }
       ]
     },
@@ -435,19 +435,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -457,21 +461,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
-        "Order1_Op1": "WP2",
+        "Order3_Op3": "WP1",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -482,117 +482,18 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
-        {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
-        }
-      ]
-    },
-    {
-      "plan_id": "Plan_06",
-      "score": 0,
-      "sequence": [
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order2",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
-        }
-      ],
-      "workplace_assignment": {
-        "Order1_Op2": "WP3",
-        "Order2_Op3": "WP1",
-        "Order1_Op1": "WP2",
-        "Order2_Op1": "WP2",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
-      },
-      "schedule": [
         {
           "order": "Order1",
           "operation": "Op2",
           "workplace": "WP3",
           "start": 0,
           "end": 13.33
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 0,
-          "end": 10.0
         },
         {
           "order": "Order1",
@@ -603,15 +504,15 @@
         },
         {
           "order": "Order2",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 23.33,
-          "end": 29.33
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 23.33,
           "end": 43.33
         },
@@ -619,22 +520,121 @@
           "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 29.33,
-          "end": 35.58
+          "start": 23.33,
+          "end": 29.58
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 43.33,
-          "end": 51.67
+          "start": 29.58,
+          "end": 37.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_06",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op2": "WP3",
+        "Order1_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 0,
+          "end": 13.33
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 13.33,
+          "end": 23.33
         },
         {
           "order": "Order3",
           "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 23.33,
+          "end": 43.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 23.33,
+          "end": 29.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
           "workplace": "WP3",
-          "start": 51.67,
-          "end": 64.17
+          "start": 29.58,
+          "end": 37.92
         }
       ]
     },
@@ -647,19 +647,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -669,21 +673,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -694,11 +694,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -715,9 +715,16 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -732,15 +739,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -753,19 +753,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -775,21 +779,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -800,11 +800,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -821,9 +821,16 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -838,15 +845,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -859,19 +859,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -881,21 +885,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP1",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -904,13 +904,6 @@
           "workplace": "WP2",
           "start": 0,
           "end": 6.0
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
         },
         {
           "order": "Order1",
@@ -927,16 +920,30 @@
           "end": 29.33
         },
         {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
         {
           "order": "Order3",
           "operation": "Op1",
-          "workplace": "WP1",
+          "workplace": "WP2",
           "start": 16.0,
           "end": 22.25
         },
@@ -944,15 +951,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -965,15 +965,19 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
           "operation": "Op2"
         },
         {
@@ -987,21 +991,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1012,11 +1012,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -1024,6 +1024,13 @@
           "workplace": "WP2",
           "start": 6.0,
           "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
@@ -1035,7 +1042,7 @@
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -1050,15 +1057,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -1071,15 +1071,19 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
           "operation": "Op2"
         },
         {
@@ -1093,21 +1097,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1118,13 +1118,6 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
           "order": "Order1",
           "operation": "Op1",
           "workplace": "WP2",
@@ -1132,230 +1125,32 @@
           "end": 16.0
         },
         {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op2",
-          "workplace": "WP3",
+          "workplace": "WP2",
           "start": 16.0,
           "end": 29.33
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
-        }
-      ]
-    },
-    {
-      "plan_id": "Plan_12",
-      "score": 0,
-      "sequence": [
-        {
-          "order": "Order2",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
-        }
-      ],
-      "workplace_assignment": {
-        "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
-        "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
-      },
-      "schedule": [
-        {
-          "order": "Order2",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 0,
-          "end": 6.0
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
-        }
-      ]
-    },
-    {
-      "plan_id": "Plan_13",
-      "score": 0,
-      "sequence": [
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order2",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
-        }
-      ],
-      "workplace_assignment": {
-        "Order1_Op2": "WP3",
-        "Order2_Op3": "WP1",
-        "Order1_Op1": "WP2",
-        "Order2_Op1": "WP2",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
-      },
-      "schedule": [
-        {
-          "order": "Order1",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 0,
-          "end": 13.33
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 0,
-          "end": 10.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 13.33,
-          "end": 23.33
-        },
-        {
-          "order": "Order2",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 23.33,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 23.33,
-          "end": 43.33
         },
         {
           "order": "Order3",
@@ -1368,20 +1163,119 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 43.33,
-          "end": 51.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 51.67,
-          "end": 64.17
+          "start": 35.58,
+          "end": 43.92
         }
       ]
     },
     {
-      "plan_id": "Plan_14",
+      "plan_id": "Plan_12",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order3_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 16.0,
+          "end": 29.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 28.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 29.33,
+          "end": 49.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 28.5,
+          "end": 34.75
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 34.75,
+          "end": 43.08
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_13",
       "score": 0,
       "sequence": [
         {
@@ -1398,10 +1292,14 @@
         },
         {
           "order": "Order1",
-          "operation": "Op2"
+          "operation": "Op3"
         },
         {
           "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -1411,21 +1309,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
         "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1451,6 +1345,112 @@
         },
         {
           "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 36.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 36.0,
+          "end": 49.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 36.0,
+          "end": 48.5
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 49.33,
+          "end": 55.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 55.58,
+          "end": 63.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_14",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
           "operation": "Op2",
           "workplace": "WP3",
           "start": 16.0,
@@ -1459,7 +1459,7 @@
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -1472,16 +1472,16 @@
         },
         {
           "order": "Order3",
-          "operation": "Op2",
-          "workplace": "WP3",
+          "operation": "Op3",
+          "workplace": "WP1",
           "start": 49.33,
-          "end": 57.67
+          "end": 61.83
         },
         {
           "order": "Order3",
-          "operation": "Op3",
+          "operation": "Op2",
           "workplace": "WP3",
-          "start": 57.67,
+          "start": 61.83,
           "end": 70.17
         }
       ]
@@ -1495,19 +1495,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
+          "operation": "Op3"
         },
         {
           "order": "Order1",
           "operation": "Op2"
         },
         {
-          "order": "Order1",
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -1517,21 +1521,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1542,6 +1542,13 @@
           "end": 6.0
         },
         {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
@@ -1550,45 +1557,38 @@
         },
         {
           "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 36.0
         },
         {
           "order": "Order1",
           "operation": "Op2",
-          "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
+          "workplace": "WP2",
+          "start": 36.0,
           "end": 49.33
         },
         {
           "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 36.0,
+          "end": 48.5
+        },
+        {
+          "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 49.33,
+          "end": 55.58
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 55.58,
+          "end": 63.92
         }
       ]
     },
@@ -1601,15 +1601,19 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
           "operation": "Op2"
         },
         {
@@ -1623,21 +1627,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1648,11 +1648,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -1660,6 +1660,13 @@
           "workplace": "WP2",
           "start": 6.0,
           "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
@@ -1671,7 +1678,7 @@
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -1686,15 +1693,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -1707,19 +1707,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
+          "operation": "Op3"
         },
         {
           "order": "Order1",
           "operation": "Op2"
         },
         {
-          "order": "Order1",
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -1729,21 +1733,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1754,6 +1754,13 @@
           "end": 6.0
         },
         {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
@@ -1762,45 +1769,38 @@
         },
         {
           "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 36.0
         },
         {
           "order": "Order1",
           "operation": "Op2",
-          "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
+          "workplace": "WP2",
+          "start": 36.0,
           "end": 49.33
         },
         {
           "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 36.0,
+          "end": 48.5
+        },
+        {
+          "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 49.33,
+          "end": 55.58
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 55.58,
+          "end": 63.92
         }
       ]
     },
@@ -1813,19 +1813,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -1835,21 +1839,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
-        "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1860,53 +1860,53 @@
           "end": 6.0
         },
         {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 0,
+          "end": 13.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 13.33,
+          "end": 23.33
+        },
+        {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2",
-          "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
+          "workplace": "WP1",
+          "start": 23.33,
+          "end": 43.33
         },
         {
           "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 23.33,
+          "end": 29.58
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.58,
+          "end": 37.92
         }
       ]
     },
@@ -1919,19 +1919,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -1941,21 +1945,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -1964,13 +1964,6 @@
           "workplace": "WP2",
           "start": 0,
           "end": 6.0
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
         },
         {
           "order": "Order1",
@@ -1987,9 +1980,23 @@
           "end": 29.33
         },
         {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -2004,15 +2011,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2021,15 +2021,11 @@
       "score": 0,
       "sequence": [
         {
-          "order": "Order2",
+          "order": "Order1",
           "operation": "Op1"
         },
         {
           "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
           "operation": "Op1"
         },
         {
@@ -2037,7 +2033,15 @@
           "operation": "Op2"
         },
         {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
           "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -2047,78 +2051,74 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
-        "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 10.0
+        },
         {
           "order": "Order2",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 0,
-          "end": 6.0
+          "start": 10.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 10.0,
+          "end": 23.33
         },
         {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2",
-          "workplace": "WP3",
           "start": 16.0,
-          "end": 29.33
+          "end": 26.0
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
+          "workplace": "WP1",
+          "start": 26.0,
+          "end": 46.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 46.0,
+          "end": 58.5
         },
         {
           "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 58.5,
+          "end": 64.75
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 64.75,
+          "end": 73.08
         }
       ]
     },
@@ -2131,6 +2131,10 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
@@ -2153,21 +2157,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
         "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
         "Order1_Op3": "WP3",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2178,11 +2178,18 @@
           "end": 6.0
         },
         {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
@@ -2218,13 +2225,6 @@
           "workplace": "WP3",
           "start": 49.33,
           "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
         }
       ]
     },
@@ -2237,19 +2237,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -2259,21 +2263,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2284,11 +2284,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -2305,9 +2305,16 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -2322,15 +2329,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2343,15 +2343,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
           "operation": "Op2"
         },
         {
@@ -2360,26 +2368,18 @@
         },
         {
           "order": "Order3",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
-        "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2390,11 +2390,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -2402,6 +2402,20 @@
           "workplace": "WP2",
           "start": 6.0,
           "end": 16.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 22.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
         },
         {
           "order": "Order1",
@@ -2413,30 +2427,16 @@
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
         {
           "order": "Order3",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
-        },
-        {
-          "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2445,15 +2445,11 @@
       "score": 0,
       "sequence": [
         {
-          "order": "Order2",
+          "order": "Order1",
           "operation": "Op1"
         },
         {
           "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
           "operation": "Op1"
         },
         {
@@ -2461,6 +2457,14 @@
           "operation": "Op2"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
           "order": "Order1",
           "operation": "Op3"
         },
@@ -2471,62 +2475,65 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
-        "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP1",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
       },
       "schedule": [
-        {
-          "order": "Order2",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 0,
-          "end": 6.0
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
         {
           "order": "Order1",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 6.0,
+          "start": 0,
+          "end": 10.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 10.0,
           "end": 16.0
         },
         {
           "order": "Order1",
           "operation": "Op2",
           "workplace": "WP3",
+          "start": 10.0,
+          "end": 23.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
           "start": 16.0,
-          "end": 29.33
+          "end": 26.0
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
+          "workplace": "WP1",
+          "start": 26.0,
+          "end": 46.0
         },
         {
           "order": "Order3",
           "operation": "Op1",
-          "workplace": "WP1",
+          "workplace": "WP2",
           "start": 16.0,
           "end": 22.25
         },
@@ -2534,15 +2541,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 23.33,
+          "end": 31.67
         }
       ]
     },
@@ -2555,19 +2555,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
+          "operation": "Op3"
         },
         {
           "order": "Order1",
           "operation": "Op2"
         },
         {
-          "order": "Order1",
+          "order": "Order3",
           "operation": "Op3"
         },
         {
@@ -2577,21 +2581,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2602,6 +2602,13 @@
           "end": 6.0
         },
         {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
           "order": "Order2",
           "operation": "Op3",
           "workplace": "WP1",
@@ -2610,45 +2617,38 @@
         },
         {
           "order": "Order1",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 6.0,
-          "end": 16.0
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 36.0
         },
         {
           "order": "Order1",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 16.0,
-          "end": 29.33
-        },
-        {
-          "order": "Order1",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
+          "start": 36.0,
           "end": 49.33
         },
         {
           "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 36.0,
+          "end": 48.5
+        },
+        {
+          "order": "Order3",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 16.0,
-          "end": 22.25
+          "start": 48.5,
+          "end": 54.75
         },
         {
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 54.75,
+          "end": 63.08
         }
       ]
     },
@@ -2661,19 +2661,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -2683,21 +2687,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2708,11 +2708,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -2729,9 +2729,16 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
@@ -2746,15 +2753,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2767,19 +2767,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -2789,21 +2793,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP1",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2814,11 +2814,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -2835,16 +2835,23 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
         {
           "order": "Order3",
           "operation": "Op1",
-          "workplace": "WP1",
+          "workplace": "WP2",
           "start": 16.0,
           "end": 22.25
         },
@@ -2852,15 +2859,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2873,19 +2873,23 @@
           "operation": "Op1"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
           "order": "Order2",
           "operation": "Op3"
         },
         {
           "order": "Order1",
-          "operation": "Op1"
-        },
-        {
-          "order": "Order1",
-          "operation": "Op2"
-        },
-        {
-          "order": "Order1",
           "operation": "Op3"
         },
         {
@@ -2895,21 +2899,17 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
         "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
         "Order1_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
-        "Order3_Op1": "WP1",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
       },
       "schedule": [
         {
@@ -2920,11 +2920,11 @@
           "end": 6.0
         },
         {
-          "order": "Order2",
+          "order": "Order3",
           "operation": "Op3",
           "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
+          "start": 0,
+          "end": 12.5
         },
         {
           "order": "Order1",
@@ -2941,16 +2941,23 @@
           "end": 29.33
         },
         {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
+          "workplace": "WP1",
           "start": 29.33,
           "end": 49.33
         },
         {
           "order": "Order3",
           "operation": "Op1",
-          "workplace": "WP1",
+          "workplace": "WP2",
           "start": 16.0,
           "end": 22.25
         },
@@ -2958,15 +2965,8 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3",
-          "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 29.33,
+          "end": 37.67
         }
       ]
     },
@@ -2975,15 +2975,11 @@
       "score": 0,
       "sequence": [
         {
-          "order": "Order2",
+          "order": "Order1",
           "operation": "Op1"
         },
         {
           "order": "Order2",
-          "operation": "Op3"
-        },
-        {
-          "order": "Order1",
           "operation": "Op1"
         },
         {
@@ -2991,6 +2987,14 @@
           "operation": "Op2"
         },
         {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
           "order": "Order1",
           "operation": "Op3"
         },
@@ -3001,57 +3005,60 @@
         {
           "order": "Order3",
           "operation": "Op2"
-        },
-        {
-          "order": "Order3",
-          "operation": "Op3"
         }
       ],
       "workplace_assignment": {
-        "Order2_Op1": "WP2",
-        "Order2_Op3": "WP1",
         "Order1_Op1": "WP2",
+        "Order2_Op1": "WP2",
         "Order1_Op2": "WP3",
-        "Order1_Op3": "WP3",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
         "Order3_Op1": "WP2",
-        "Order3_Op2": "WP3",
-        "Order3_Op3": "WP3"
+        "Order3_Op2": "WP3"
       },
       "schedule": [
-        {
-          "order": "Order2",
-          "operation": "Op1",
-          "workplace": "WP2",
-          "start": 0,
-          "end": 6.0
-        },
-        {
-          "order": "Order2",
-          "operation": "Op3",
-          "workplace": "WP1",
-          "start": 6.0,
-          "end": 16.0
-        },
         {
           "order": "Order1",
           "operation": "Op1",
           "workplace": "WP2",
-          "start": 6.0,
+          "start": 0,
+          "end": 10.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 10.0,
           "end": 16.0
         },
         {
           "order": "Order1",
           "operation": "Op2",
           "workplace": "WP3",
+          "start": 10.0,
+          "end": 23.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
           "start": 16.0,
-          "end": 29.33
+          "end": 26.0
         },
         {
           "order": "Order1",
           "operation": "Op3",
-          "workplace": "WP3",
-          "start": 29.33,
-          "end": 49.33
+          "workplace": "WP1",
+          "start": 26.0,
+          "end": 46.0
         },
         {
           "order": "Order3",
@@ -3064,15 +3071,1492 @@
           "order": "Order3",
           "operation": "Op2",
           "workplace": "WP3",
-          "start": 49.33,
-          "end": 57.67
+          "start": 23.33,
+          "end": 31.67
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_30",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op1": "WP2",
+        "Order1_Op2": "WP2",
+        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 29.33
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.0,
+          "end": 16.0
         },
         {
           "order": "Order3",
           "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 28.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 29.33,
+          "end": 49.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 29.33,
+          "end": 35.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
           "workplace": "WP3",
-          "start": 57.67,
-          "end": 70.17
+          "start": 35.58,
+          "end": 43.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_31",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order3_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 28.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 16.0,
+          "end": 29.33
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 29.33,
+          "end": 49.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 28.5,
+          "end": 34.75
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 34.75,
+          "end": 43.08
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_32",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op2": "WP3",
+        "Order1_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 0,
+          "end": 13.33
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 13.33,
+          "end": 23.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 23.33,
+          "end": 43.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 23.33,
+          "end": 29.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 29.58,
+          "end": 37.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_33",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 29.33
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 29.33,
+          "end": 49.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 29.33,
+          "end": 35.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 35.58,
+          "end": 43.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_34",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order1_Op1": "WP2",
+        "Order2_Op1": "WP2",
+        "Order1_Op2": "WP3",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 10.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 10.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 10.0,
+          "end": 23.33
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 26.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 26.0,
+          "end": 46.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 22.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 23.33,
+          "end": 31.67
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_35",
+      "score": 0,
+      "sequence": [
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order1_Op1": "WP2",
+        "Order1_Op2": "WP3",
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 10.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 10.0,
+          "end": 23.33
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 10.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 16.0,
+          "end": 26.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 26.0,
+          "end": 46.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 22.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 23.33,
+          "end": 31.67
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_36",
+      "score": 5.579999999999998,
+      "sequence": [
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order3_Op1": "WP2",
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.25,
+          "end": 12.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.25,
+          "end": 18.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 12.25,
+          "end": 22.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 18.75,
+          "end": 28.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 22.25,
+          "end": 35.58
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 35.58,
+          "end": 55.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 35.58,
+          "end": 43.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_37",
+      "score": 5.579999999999998,
+      "sequence": [
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order3_Op1": "WP2",
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.25,
+          "end": 12.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.25,
+          "end": 18.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 12.25,
+          "end": 22.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 18.75,
+          "end": 28.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 22.25,
+          "end": 35.58
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 35.58,
+          "end": 55.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 35.58,
+          "end": 43.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_38",
+      "score": 5.579999999999998,
+      "sequence": [
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order3_Op1": "WP2",
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order1_Op3": "WP1",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.25,
+          "end": 12.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 6.25,
+          "end": 18.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 12.25,
+          "end": 22.25
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 18.75,
+          "end": 28.75
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 22.25,
+          "end": 35.58
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 35.58,
+          "end": 55.58
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 35.58,
+          "end": 43.92
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_39",
+      "score": 5.829999999999998,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 22.5,
+          "end": 42.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 42.5,
+          "end": 55.83
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 55.83,
+          "end": 62.08
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 62.08,
+          "end": 70.42
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_40",
+      "score": 5.829999999999998,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 22.5,
+          "end": 42.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 42.5,
+          "end": 55.83
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 55.83,
+          "end": 62.08
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 62.08,
+          "end": 70.42
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_41",
+      "score": 5.829999999999998,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 22.5,
+          "end": 42.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 42.5,
+          "end": 55.83
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 55.83,
+          "end": 62.08
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 62.08,
+          "end": 70.42
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_42",
+      "score": 5.829999999999998,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order1_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP3",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 22.5,
+          "end": 42.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 42.5,
+          "end": 55.83
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 16.0,
+          "end": 22.25
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 55.83,
+          "end": 64.17
+        }
+      ]
+    },
+    {
+      "plan_id": "Plan_43",
+      "score": 5.829999999999998,
+      "sequence": [
+        {
+          "order": "Order2",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3"
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1"
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2"
+        }
+      ],
+      "workplace_assignment": {
+        "Order2_Op1": "WP2",
+        "Order3_Op3": "WP1",
+        "Order1_Op1": "WP2",
+        "Order2_Op3": "WP1",
+        "Order1_Op3": "WP1",
+        "Order1_Op2": "WP2",
+        "Order3_Op1": "WP2",
+        "Order3_Op2": "WP3"
+      },
+      "schedule": [
+        {
+          "order": "Order2",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 0,
+          "end": 6.0
+        },
+        {
+          "order": "Order3",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 0,
+          "end": 12.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 6.0,
+          "end": 16.0
+        },
+        {
+          "order": "Order2",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 12.5,
+          "end": 22.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op3",
+          "workplace": "WP1",
+          "start": 22.5,
+          "end": 42.5
+        },
+        {
+          "order": "Order1",
+          "operation": "Op2",
+          "workplace": "WP2",
+          "start": 42.5,
+          "end": 55.83
+        },
+        {
+          "order": "Order3",
+          "operation": "Op1",
+          "workplace": "WP2",
+          "start": 55.83,
+          "end": 62.08
+        },
+        {
+          "order": "Order3",
+          "operation": "Op2",
+          "workplace": "WP3",
+          "start": 62.08,
+          "end": 70.42
         }
       ]
     }
