@@ -65,8 +65,6 @@ Production Planning Assistant
 - nomic-embed-text
 - ChromaDB
 - Requests
-- Pandas
-- NumPy
 
 ## Project Structure
 
