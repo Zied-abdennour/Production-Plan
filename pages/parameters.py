@@ -11,8 +11,8 @@ page_header(
 
 if "parameters" not in st.session_state:
     st.session_state.parameters = {
-        "generations": 20,
-        "population_size": 30,
+        "generations": 100,
+        "population_size": 50,
         "selection_percent": 0.2,
         "mutation_rate": 0.1
     }
