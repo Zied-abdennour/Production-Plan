@@ -60,28 +60,25 @@ if st.button(
         rates
     )
 
-    if result is None:
-        st.error("The genetic algorithm did not return a valid result.")
-        st.session_state.pop("best_result", None)
-        st.stop()
-
-    if not isinstance(result, tuple) or len(result) != 3:
+    if result is None or not isinstance(result, tuple) or len(result) != 3:
         st.error("The genetic algorithm returned an invalid result.")
         st.session_state.pop("best_result", None)
         st.stop()
 
     st.session_state.best_result = result
 
-    save_equal_score_plans(
-        orders,
-        product_operations,
-        rates
-    )
-
     try:
+        save_equal_score_plans(
+            orders,
+            product_operations,
+            rates
+        )
+
         store_plans()
+
         st.success("Optimization completed.")
         st.success("Equal-score plans stored in the RAG database.")
+
     except Exception as e:
         st.success("Optimization completed.")
         st.warning(f"RAG storage failed: {e}")
@@ -139,56 +136,118 @@ for item in schedule:
 
 timeline_workplaces = list(dict.fromkeys(timeline_workplaces))
 
-timeline_html = """
-<div class="production-timeline">
-<div class="timeline-inner">
-<div class="timeline-axis-row">
-<div class="timeline-axis-label">Time</div>
-<div class="timeline-axis">
+timeline_width = 900
+
+html = f"""
+<div style="
+    width:100%;
+    overflow-x:auto;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    background:#ffffff;
+    padding:20px;
+    box-sizing:border-box;
+">
+    <div style="
+        min-width:{timeline_width}px;
+        font-family:Arial,sans-serif;
+    ">
+
+        <div style="
+            display:grid;
+            grid-template-columns:80px 1fr;
+            margin-bottom:12px;
+        ">
+
+            <div style="
+                font-size:13px;
+                font-weight:600;
+                color:#64748b;
+                padding-top:4px;
+            ">
+                Workplace
+            </div>
+
+            <div style="
+                position:relative;
+                height:40px;
+                border-bottom:1px solid #cbd5e1;
+            ">
 """
 
 for i in range(11):
     percent = i * 10
     time_value = max_time * percent / 100
 
-    timeline_html += f"""
-    <div
-        class="timeline-axis-line"
-        style="left:{percent}%"
-    ></div>
+    html += f"""
+                <div style="
+                    position:absolute;
+                    left:{percent}%;
+                    top:0;
+                    bottom:0;
+                    width:1px;
+                    background:#e2e8f0;
+                "></div>
 
-    <div
-        class="timeline-axis-value"
-        style="left:{percent}%"
-    >
-        {time_value:.0f}
-    </div>
-    """
+                <div style="
+                    position:absolute;
+                    left:{percent}%;
+                    top:2px;
+                    transform:translateX(-50%);
+                    font-size:11px;
+                    color:#64748b;
+                    white-space:nowrap;
+                ">
+                    {time_value:.0f}
+                </div>
+"""
 
-timeline_html += """
-</div>
-</div>
+html += """
+            </div>
+        </div>
 """
 
 for workplace in timeline_workplaces:
 
-    timeline_html += f"""
-    <div class="timeline-row">
-        <div class="timeline-workplace">
-            {workplace}
-        </div>
-        <div class="timeline-track">
-    """
+    html += f"""
+        <div style="
+            display:grid;
+            grid-template-columns:80px 1fr;
+            min-height:68px;
+        ">
+
+            <div style="
+                display:flex;
+                align-items:center;
+                font-size:13px;
+                font-weight:700;
+                color:#1e293b;
+                border-bottom:1px solid #f1f5f9;
+            ">
+                {workplace}
+            </div>
+
+            <div style="
+                position:relative;
+                height:68px;
+                border-bottom:1px solid #f1f5f9;
+                background:#ffffff;
+            ">
+"""
 
     for i in range(1, 10):
         percent = i * 10
 
-        timeline_html += f"""
-        <div
-            class="timeline-grid-line"
-            style="left:{percent}%"
-        ></div>
-        """
+        html += f"""
+                <div style="
+                    position:absolute;
+                    left:{percent}%;
+                    top:0;
+                    bottom:0;
+                    width:1px;
+                    background:#eef2f7;
+                "></div>
+"""
 
     workplace_operations = [
         item for item in schedule
@@ -214,33 +273,66 @@ for workplace in timeline_workplaces:
             f"{start:.2f} → {end:.2f}"
         )
 
-        timeline_html += f"""
-        <div
-            class="timeline-block"
-            style="left:{left}%; width:{width}%"
-            title="{title}"
-        >
-            <span class="timeline-block-label">
-                {label}
-            </span>
-        </div>
-        """
+        html += f"""
+                <div title="{title}" style="
+                    position:absolute;
+                    left:{left}%;
+                    width:{width}%;
+                    top:15px;
+                    height:38px;
+                    min-width:8px;
+                    box-sizing:border-box;
+                    background:#334155;
+                    border:1px solid #273449;
+                    border-radius:7px;
+                    display:flex;
+                    align-items:center;
+                    overflow:hidden;
+                    box-shadow:0 1px 2px rgba(15,23,42,0.12);
+                ">
+                    <span style="
+                        color:#ffffff;
+                        font-size:11px;
+                        font-weight:600;
+                        padding:0 9px;
+                        white-space:nowrap;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                    ">
+                        {label}
+                    </span>
+                </div>
+"""
 
-    timeline_html += """
+    html += """
+            </div>
         </div>
+"""
+
+html += f"""
+        <div style="
+            display:grid;
+            grid-template-columns:80px 1fr;
+            margin-top:12px;
+        ">
+            <div></div>
+
+            <div style="
+                display:flex;
+                justify-content:space-between;
+                color:#64748b;
+                font-size:11px;
+            ">
+                <span>0</span>
+                <span>{max_time:.0f} minutes</span>
+            </div>
+        </div>
+
     </div>
-    """
-
-timeline_html += """
-<div class="timeline-footer">
-    <span>Production time</span>
-    <span>Minutes</span>
-</div>
-</div>
 </div>
 """
 
-st.html(timeline_html)
+st.html(html)
 
 st.subheader("Detailed Schedule")
 

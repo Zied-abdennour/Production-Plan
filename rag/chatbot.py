@@ -42,6 +42,10 @@ Therefore:
 - Equal scores do NOT necessarily mean the plans are identical.
 - Do not invent other scoring criteria.
 
+-Only use information contained in the retrieved plans and project context.
+-Do not invent reasons for a score.
+-If the retrieved information does not explain something, explicitly say that it is not available.
+
 RETRIEVED PRODUCTION PLANS:
 
 {context}
